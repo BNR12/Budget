@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Budget Manager</title>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</head>
+	<body>
+		<h1>Budget Manager</h1>
+
+		<!-- Budget calculations will go here -->
+		<table id="budget">
+		</table>
+
+		<form name="purchase">
+			<h3> Add new purchase: </h3>
+			Category: 
+			<select name="category" id="category" form="purchase">
+  				<option value="rent">rent</option>
+ 				<option value="food">food</option>
+  				<option value="gas">gas</option>
+  				<option value="clothes">clothes</option>
+  				<option value="miscellaneous">miscellaneous</option>
+  				<option value="insurance">insurance</option>
+  				<option value="loans">loans</option>
+			</select><br><br>
+			Amount:
+			<input type="number" id="amt" name="amt" value="" /><br><br>
+			Date:
+			<input type="date" id="date" name="date" /><br><br>
+			Description: 
+			<input type="text" id="description" name="description" value="" /><br><br>
+			<input type="button" id="submit" value="Submit" />
+		</form>
+	</body>
+</html>
